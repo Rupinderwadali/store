@@ -1,0 +1,21 @@
+ChangeLog
+=========
+
+Version 0.92
+
+	i) Properly Escaped all Values on Output
+	ii) Removed Redundant bootstrap's js files.
+	iii) Corrected text domain in customizer.php
+
+Version 0.91
+
+	i) Used Hooks to Avoid Overriding WooCommerce Templates.
+	ii) Used Proper Sanitization for Custom CSS in Theme Options.
+	iii) Fixed Site Title Color in Customizer.
+	iv) Added Missing text domains.
+	v) Escaped Social Icon Urls and Site Logo Img src.
+	vi) Added Unminified Version of CSS files.
+
+Version 0.9
+
+	i) Initial Release.
