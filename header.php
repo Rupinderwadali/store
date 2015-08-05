@@ -32,9 +32,9 @@
 			<div class="social-icons">
 				<?php get_template_part('social', 'fa'); ?>	 
 			</div>
-			<div id="top-menu">
-				<?php wp_nav_menu( array( 'theme_location' => 'top' ) ); ?>
-			</div>
+		<!--	<div id="top-menu">
+				<?php// wp_nav_menu( array( 'theme_location' => 'top' ) ); ?>
+			</div>-->
 		</div>
 	</div>
 	
