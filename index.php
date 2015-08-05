@@ -15,8 +15,16 @@ get_header(); ?>
 
 	<div id="primary" class="content-areas <?php do_action('store_primary-width') ?>">
 		<main id="main" class="site-main <?php do_action('store_main-class') ?>" role="main">
+<select id = "city">
+	<option value="none">Select</option>
+	<option value ="Amritsar" >Amritsar</option>
+	<option value ="TaranTarn">TaranTarn</option>
+	<option value ="Ludhiana">Ludhiana</option>
+</select>
+<select id = "area">
+</select>
 
-		<?php if ( have_posts() ) : ?>
+	<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -40,6 +48,21 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+<script type="text/javascript" language="javascript">
+
+	$("#city").change(function(){
+		var value= this.value;
+		$("#area").empty();
+		if(value == "Amritsar"){
+  			$("#area").append($('<option>Chheharta</option>'));
+			}	 
+		else if(value == "Ludhiana"){
+			$("#area").append($('<option>Gill_Road</option>'));
+			}	
+		});
+</script>
+
 
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>
