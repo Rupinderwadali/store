@@ -21,10 +21,11 @@ get_header(); ?>
 	<option value ="TaranTarn">TaranTarn</option>
 	<option value ="Ludhiana">Ludhiana</option>
 </select>
-<select id = "area">
+<select id = "areas">
 </select>
 
 	<?php if ( have_posts() ) : ?>
+                        <?php  get_template_part( 'content', 'area' );?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -32,9 +33,10 @@ get_header(); ?>
 				<?php
 					/* Include the Post-Format-specific template for the content.
 					 */
-					do_action('store_blog_layout'); 
-					
-				?>
+				//	do_action('store_blog_layout'); 
+			
+					// get_template_part( 'content', 'area' );
+	?>
 
 			<?php endwhile; ?>
 
@@ -45,6 +47,8 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
+		       <?php// get_template_part( 'content', 'area' );?>   					
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
@@ -53,16 +57,21 @@ get_header(); ?>
 
 	$("#city").change(function(){
 		var value= this.value;
-		$("#area").empty();
+		$("#areas").empty();
 		if(value == "Amritsar"){
-  			$("#area").append($('<option>Chheharta</option>'));
+  			$("#areas").append($('<option>Chheharta</option>'));
 			}	 
 		else if(value == "Ludhiana"){
-			$("#area").append($('<option>Gill_Road</option>'));
+			$("#areas").append($('<option>Gill_Road</option>'));
 			}	
 		});
 </script>
 
-
+<script type="text/javascript" language="javascript">
+	$("#areas").change(function(){
+	var select= this.value;
+        $( select ).css("display" , "block");
+	});
+</script>  
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>

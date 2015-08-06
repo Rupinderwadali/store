@@ -4,6 +4,15 @@
  *
  * @package store
  */
+function create_my_taxonomies() {
+
+register_taxonomy('area', 'post', array(
+
+'hierarchical' => false, 'label' => 'area',
+
+'query_var' => true, 'rewrite' => true));
+}
+add_action('init', 'create_my_taxonomies', 0);
 
 
 
