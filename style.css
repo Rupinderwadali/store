@@ -782,5 +782,5 @@ object {
 	float:left;
 }
 .area {
-	display:none;
+	display:block;
 }

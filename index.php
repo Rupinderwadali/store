@@ -25,7 +25,7 @@ get_header(); ?>
 </select>
 
 	<?php if ( have_posts() ) : ?>
-                        <?php  get_template_part( 'content', 'area' );?>
+                        <?php// get_template_part( 'content', 'area' );?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -33,7 +33,7 @@ get_header(); ?>
 				<?php
 					/* Include the Post-Format-specific template for the content.
 					 */
-				//	do_action('store_blog_layout'); 
+					do_action('store_blog_layout'); 
 			
 					// get_template_part( 'content', 'area' );
 	?>
@@ -66,12 +66,13 @@ get_header(); ?>
 			}	
 		});
 </script>
-
+<!--
 <script type="text/javascript" language="javascript">
 	$("#areas").change(function(){
 	var select= this.value;
         $( select ).css("display" , "block");
 	});
-</script>  
+</script>
+-->  
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>
