@@ -25,20 +25,20 @@ get_header(); ?>
 </select>
 
 	<?php if ( have_posts() ) : ?>
-                        <?php// get_template_part( 'content', 'area' );?>
+                        <?php// get_template_part( 'content', 'place' );?>
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php //while ( have_posts() ) : the_post(); ?>
 
 				<?php
 					/* Include the Post-Format-specific template for the content.
 					 */
-					do_action('store_blog_layout'); 
+			//		do_action('store_blog_layout'); 
 			
-					// get_template_part( 'content', 'area' );
+					 get_template_part( 'content', 'area' );
 	?>
 
-			<?php endwhile; ?>
+			<?php //endwhile; ?>
 
 			<?php store_pagination(); ?>
 
@@ -58,21 +58,31 @@ get_header(); ?>
 	$("#city").change(function(){
 		var value= this.value;
 		$("#areas").empty();
+  			$("#areas").append($('<option>Select</option>'));
 		if(value == "Amritsar"){
-  			$("#areas").append($('<option>Chheharta</option>'));
+  			$("#areas").append($('<option>Chheharta</option> + <option>Mall_Road</option> + <option>Ranjit_Avenue</option>'));
 			}	 
 		else if(value == "Ludhiana"){
-			$("#areas").append($('<option>Gill_Road</option>'));
+			$("#areas").append($('<option>Gill_Road</option> + <option>Dugri</option>'));
 			}	
 		});
-</script>
-<!--
-<script type="text/javascript" language="javascript">
+
 	$("#areas").change(function(){
+		console.log("running");
 	var select= this.value;
-        $( select ).css("display" , "block");
+			$(".area").children().css({"display":"none"});
+		if(select == 'Chheharta'){
+        		$(".Chheharta").css({"display": "block"});
+		}
+	       	else if(select == 'Ranjit_Avenue'){
+			$(" .Ranjit_Avenue").css({"display":"block"});
+		}
+	 	else if(select == 'Gill_Road'){
+			$(" .Gill_Road").css({"display":"block"});
+		}
+
+
 	});
-</script>
--->  
+</script>  
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>
