@@ -787,4 +787,14 @@ object {
 #primary-mono {
    width:1050px;
 }
+#areas, #city {
+text-align: center;
+
+
+}
+.site-footer {
+	height:100px;
+}
+
+
 

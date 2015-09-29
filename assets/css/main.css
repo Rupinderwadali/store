@@ -73,10 +73,10 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #42a1cd;
+  color: #4e9b35;
 }
 .container {
-  margin: auto;
+  width:100%;
 }
 .panel {
   background: none;
@@ -84,7 +84,7 @@ a:hover {
 /* ---------- Header ------------- */
 #top-bar {
   padding-top: 6px;
-  background: #42a1cd;
+  background: #fafafa;
 }
 @media screen and (max-width: 991px) {
   #top-bar .container {
@@ -92,8 +92,7 @@ a:hover {
   }
 }
 #top-bar .social-icons {
-  float: right;
-  display: inline-block;
+  text-align:center;
 }
 @media screen and (max-width: 991px) {
   #top-bar .social-icons {
@@ -103,7 +102,7 @@ a:hover {
   }
 }
 #top-bar .social-icons a {
-  background: #42a1cd;
+  background: #4e9b35;
   padding: 3px 7px;
   padding-top: 5px;
   color: white;
@@ -171,7 +170,7 @@ a:hover {
 #masthead {
   text-align: left;
   background: #42a1cd;
-  color: white;
+  color: #4e9b35;
 }
 #masthead #text-title-desc {
   clear: none;
@@ -191,7 +190,8 @@ a:hover {
 #masthead h1.site-title {
   font-size: 47px;
   font-weight: bold;
-  margin-top: 0px;
+  margin-top: 20px;
+  position: relative;
 }
 @media screen and (max-width: 600px) {
   #masthead h1.site-title {
@@ -199,7 +199,7 @@ a:hover {
   }
 }
 #masthead h1.site-title a {
-  color: white;
+  color: #4e9b35;
 }
 #masthead h2.site-description {
   font-weight: 300;
@@ -207,12 +207,10 @@ a:hover {
   margin-top: 10px;
 }
 .site-branding {
-  padding: 0;
-  position: relative;
-  top: -15px;
   overflow: hidden;
-  display: inline-block;
   float: left;
+  width:60%;
+  margin-left:6%;
 }
 @media screen and (max-width: 991px) {
   .site-branding {
@@ -234,7 +232,6 @@ a:hover {
 }
 #top-search {
   display: inline-block;
-  float: right;
   padding: 15px 0px;
   padding-right: 0;
   margin-left: 5px;
@@ -275,7 +272,7 @@ a:hover {
   color: #6ab5d8;
 }
 #top-search button {
-  background: #2e85ae;
+  background: #4e9b35;
   box-shadow: none;
   border: solid 2px #3395c2;
   text-shadow: none;
@@ -379,14 +376,14 @@ a:hover {
 /* -------- Nav Menu ---------- */
 #site-navigation {
   float: left;
-  background: #2e85ae;
+  background:#fafafa;
 }
 #site-navigation ul {
   /* for the Currently active page */
 }
 #site-navigation ul li a {
   padding: 6px 10px;
-  color: #ebebeb;
+  color: #4e9b35;
   font-weight: 400;
   transition: 0.2s all ease;
   -webkit-transition: 0.2s all ease;
@@ -395,17 +392,18 @@ a:hover {
   -o-transition: 0.2s all ease;
 }
 #site-navigation ul li a:hover {
-  background: #369bca;
+  background:  #369bca;
 }
 #site-navigation ul li:hover a {
-  background: #369bca;
+  background:#4e9b35;
+  color:#fafafa;
 }
 #site-navigation ul li ul li .menu-desc {
   display: none;
 }
 #site-navigation ul li ul.sub-menu,
 #site-navigation ul li ul.children {
-  background: #369bca;
+  background: #4e9bca;
   top: 52px;
   display: block;
   transition: 0.4s all ease;
@@ -1946,7 +1944,7 @@ span.infinite-loader .spinner {
   margin-right: 5px;
 }
 #colophon {
-  background: #42a1cd;
+  background:#4e9b35;
   padding: 15px 10px 15px 10px;
   color: #f5f5f5;
   font-size: 13px;
@@ -2142,8 +2140,22 @@ span.infinite-loader .spinner {
   font-style: italic;
   font-size: 12px;
 }
+.top-bar-container {
+ margin:0;
+ padding:0; 
+}
 @media screen and (max-width: 480px) {
   li.comment {
     margin-left: -5%;
   }
+}
+.site-info {
+  text-align:left;
+   
+}
+ #top-search {
+	background :#4e9b35;
+}
+#site-navigation, .masthead-container {
+	background: #fafafa;
 }

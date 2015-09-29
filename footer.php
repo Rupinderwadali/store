@@ -13,11 +13,21 @@
 	<?php get_sidebar('footer'); ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info container">
-			<?php printf( __( 'Theme Designed by %1$s.', 'store' ), '<a href="'.esc_url("http://rohitink.com/").'" rel="designer">Rohit</a>' ); ?>
+		<div class="site-info">
+			<?php/* printf( __( 'Be Organic' )  );*/?>
 			<span class="sep"></span>
-			<?php echo ( get_theme_mod('store_footer_text') == '' ) ? ('&copy; '.date('Y').' '.get_bloginfo('name').__('. All Rights Reserved. ','store')) : esc_html( get_theme_mod('store_footer_text') ); ?>
-		</div><!-- .site-info -->
+                   <div class="foot-head">
+
+			<?php echo ( get_theme_mod('store_footer_text') == '' ) ? (get_bloginfo('name')) : esc_html( get_theme_mod('store_footer_text') ); ?>
+	  	</div><!--foot-->
+        	</div><!--site-info-->
+		<div id="top-bar">		
+			<div class="social-icons">
+						<?php get_template_part('social', 'fa'); ?>	 
+					</div>
+			
+		
+		</div><!-- top-bar -->
 	</footer><!-- #colophon -->
 	
 </div><!-- #page -->

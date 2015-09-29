@@ -31,16 +31,6 @@
 		</div>
 	</div>	
 	
-	<div id="top-bar">
-		<div class="container">
-			<div class="social-icons">
-				<?php get_template_part('social', 'fa'); ?>	 
-			</div>
-		<!--	<div id="top-menu">
-				<?php// wp_nav_menu( array( 'theme_location' => 'top' ) ); ?>
-			</div>-->
-		</div>
-	</div>
 	
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container masthead-container">
@@ -56,26 +46,22 @@
 				</div>
 			</div>	
 			
-			<div id="top-cart">
-			<?php if (class_exists('woocommerce')) :
-				?>
-					<div class="top-cart-icon">
-
-	 
-					<a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'store'); ?>">
-						<div class="count"><?php echo sprintf(_n('%d item', '%d items', WC()->cart->cart_contents_count, 'store'), WC()->cart->cart_contents_count);?></div>
-						<div class="total"> <?php echo WC()->cart->get_cart_total(); ?>
-						</div>
-					</a>
-					
-					<i class="fa fa-shopping-cart"></i>
+	
+			<div id="top-bar">
+				<div class="top-bar-container">
+					<div class="social-icons">
+						<?php get_template_part('social', 'fa'); ?>	 
 					</div>
-				<?php endif; ?>	
-			</div>	
 			
-			<div id="top-search">
-				<?php get_template_part('searchform', 'top'); ?>
-			</div>
+					<div id="top-search">
+						<?php get_template_part('searchform', 'top'); ?>
+					</div>
+		<!--	<div id="top-menu">
+				<?php// wp_nav_menu( array( 'theme_location' => 'top' ) ); ?>
+			</div>-->
+				</div><!--container-->
+			</div><!--top-bar-->
+	
 			
 		</div>	
 		
