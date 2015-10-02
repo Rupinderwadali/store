@@ -795,6 +795,9 @@ text-align: center;
 .site-footer {
 	height:100px;
 }
-
+#city, #areas {
+	width:100px;
+	
+}
 
 

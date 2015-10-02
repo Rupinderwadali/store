@@ -16,12 +16,13 @@ get_header(); ?>
 	<div id="primary" class="content-areas <?php do_action('store_primary-width') ?>">
 		<main id="main" class="site-main <?php do_action('store_main-class') ?>" role="main">
 <select id = "city">
-	<option value="none">Select</option>
+	<option value="none">Districts</option>
 	<option value ="Amritsar" >Amritsar</option>
 	<option value ="TaranTarn">TaranTarn</option>
 	<option value ="Ludhiana">Ludhiana</option>
 </select>
 <select id = "areas">
+	<option value="none">Area</option>
 </select>
 
 	<?php if ( have_posts() ) : ?>

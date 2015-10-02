@@ -68,7 +68,7 @@ body {
   overflow: visible;
 }
 a {
-  color: #42a1cd;
+  color: #4E9B35;
   cursor: pointer;
 }
 a:hover {
@@ -77,6 +77,8 @@ a:hover {
 }
 .container {
   width:100%;
+  min-height: 100%;
+  /*margin-bottom: 100px;*/
 }
 .panel {
   background: none;
@@ -127,7 +129,7 @@ a:hover {
 }
 #top-bar .social-icons a:hover {
   background: #e6e6e6;
-  color: #42a1cd;
+  color: #4e9b35;
   border-radius: 10px;
 }
 #top-bar #searchicon {
@@ -252,8 +254,8 @@ a:hover {
   }
 }
 #top-search input[type=search] {
-  background: #c3e1ef;
-  border: solid 2px #3395c2;
+  background: #A3DF8F;
+  border: solid 2px #4E9B35;
   border-right: none;
   padding: 10px 10px;
   outline: none;
@@ -272,9 +274,9 @@ a:hover {
   color: #6ab5d8;
 }
 #top-search button {
-  background: #4e9b35;
+  background: #DDFAD3;
   box-shadow: none;
-  border: solid 2px #3395c2;
+  border: solid 2px #4e9b35;
   text-shadow: none;
   padding: 10px 13px;
   border-left: none;
@@ -493,7 +495,7 @@ a:hover {
 #site-navigation ul .current_page_item > a,
 #site-navigation ul .current-menu-item > a,
 #site-navigation ul .current_page_ancestor > a {
-  background: #2e85ae;
+  background: #4E9B35;
   color: #e0e0e0;
 }
 #site-navigation .fa {
@@ -1139,6 +1141,7 @@ a:hover {
 }
 #content {
   margin-top: 30px;
+
 }
 .grid-row {
   margin: 0;
@@ -1944,11 +1947,16 @@ span.infinite-loader .spinner {
   margin-right: 5px;
 }
 #colophon {
-  background:#4e9b35;
+  background:#fafafa;
   padding: 15px 10px 15px 10px;
   color: #f5f5f5;
   font-size: 13px;
   text-align: center;
+  position: fixed;
+  width:100%;
+  left:0px;
+  bottom:0px;
+  
 }
 #colophon a {
   color: white;
@@ -2154,8 +2162,13 @@ span.infinite-loader .spinner {
    
 }
  #top-search {
-	background :#4e9b35;
+	background :#fafafa;
 }
 #site-navigation, .masthead-container {
 	background: #fafafa;
 }
+.foot-head {
+  color:#4e9b35;
+  font-size:200%;
+}
+

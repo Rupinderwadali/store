@@ -19,14 +19,13 @@
                    <div class="foot-head">
 
 			<?php echo ( get_theme_mod('store_footer_text') == '' ) ? (get_bloginfo('name')) : esc_html( get_theme_mod('store_footer_text') ); ?>
-	  	</div><!--foot-->
+	  	   </div><!--foot-->
         	</div><!--site-info-->
 		<div id="top-bar">		
 			<div class="social-icons">
 						<?php get_template_part('social', 'fa'); ?>	 
-					</div>
+			</div>
 			
-		
 		</div><!-- top-bar -->
 	</footer><!-- #colophon -->
 	
