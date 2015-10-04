@@ -14,36 +14,16 @@
 get_header(); ?>
 
 <div id="primary" class="content-areas <?php do_action('store_primary-width') ?>">
-<main id="main" class="site-main <?php do_action('store_main-class') ?>" role="main">te_part( 'content', 'area' );
-       
+<main id="main" class="site-main <?php do_action('store_main-class') ?>" role="main">
 
- <?php if ( have_posts() ) : ?>
-                        <?php// get_template_part( 'content', 'place' );?>
+<?php
+query_posts('cat name= blog post');
+while (have_posts()) : the_post();
+the_content();
+endwhile;
+?>
 
-                        <?php /* Start the Loop */ ?>
-                        <?php //while ( have_posts() ) : the_post(); ?>
-
-                                <?php
-                                        /* Include the Post-Format-specific template for the content.
-                                         */
-                        //              do_action('store_blog_layout'); 
-
-                                         get_template_part( 'content', 'area' );
-        ?>
-
-                        <?php //endwhile; ?>
-
-                        <?php store_pagination(); ?>
-
-                <?php else : ?>
-
-                        <?php get_template_part( 'content', 'none' ); ?>
-
-                <?php endif; ?>
-                       <?php// get_template_part( 'content', 'area' );?>
-
-
-                </main><!-- #main -->
+    </main><!-- #main -->
         </div><!-- #primary -->
 
 <?php get_sidebar; ()?>
