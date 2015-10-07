@@ -778,8 +778,8 @@ object {
 	display: block;
 }
 #primary {
-	width:1050px;
-	float:left;
+	/*width:1050px;
+	float:left;*/
 }
 .Chheharta, .Ranjit_Avenue, .Gill_Road {
 	display:none;
@@ -800,4 +800,7 @@ text-align: center;
 	
 }
 
-
+#main {
+	background:#fafafa;
+	padding:50px;
+}

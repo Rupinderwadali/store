@@ -1561,6 +1561,7 @@ aside:nth-child(odd) {
 }
 #secondary aside {
   padding: 10px;
+   display:block;
 }
 #secondary h1.widget-title {
   font-weight: normal;
@@ -1782,7 +1783,7 @@ aside:nth-child(odd) {
 span.infinite-loader .spinner {
   left: 50% !important;
 }
-.infinity-end.neverending #main {
+.infinity-end.neverending */#main {
   margin-bottom: 100px;
 }
 /* Footer Sidebar */
@@ -2164,11 +2165,13 @@ span.infinite-loader .spinner {
  #top-search {
 	background :#fafafa;
 }
-#site-navigation, .masthead-container {
+.masthead-container {
 	background: #fafafa;
 }
 .foot-head {
   color:#4e9b35;
   font-size:200%;
 }
-
+#site-navigation{
+     background:#4e9b35;
+}

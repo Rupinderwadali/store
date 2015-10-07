@@ -17,15 +17,14 @@ get_header(); ?>
 <main id="main" class="site-main <?php do_action('store_main-class') ?>" role="main">
 
 <?php
-query_posts('cat name= blog post');
-while (have_posts()) : the_post();
-the_content();
+  query_posts( array ( 'category_name' => 'blog post', 'posts_per_page' => 4 ) ); 
+  while (have_posts()) : the_post();
+  the_content();
 endwhile;
 ?>
 
     </main><!-- #main -->
         </div><!-- #primary -->
 
-<?php get_sidebar; ()?>
-<?php get_footer; ()?>
-
+<?php get_sidebar();?>
+<?php get_footer();?>
