@@ -50,7 +50,7 @@
 			<div id="top-bar">
 				<div class="top-bar-container">
 					<div class="social-icons">
-						<?php get_template_part('social', 'fa'); ?>	 
+						<?php //get_template_part('social', 'fa'); ?>	 
 					</div>
 			
 					<div id="top-search">

@@ -84,5 +84,5 @@ get_header(); ?>
 
 	});
 </script>  
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

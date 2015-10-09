@@ -18,10 +18,10 @@
 			<span class="sep"></span>
                    <div class="foot-head">
 
-			<?php echo ( get_theme_mod('store_footer_text') == '' ) ? (get_bloginfo('name')) : esc_html( get_theme_mod('store_footer_text') ); ?>
+			<?php //echo ( get_theme_mod('store_footer_text') == '' ) ? (get_bloginfo('name')) : esc_html( get_theme_mod('store_footer_text') ); ?>
 	  	   </div><!--foot-->
         	</div><!--site-info-->
-		<div id="top-bar">		
+		<div id="bottom-bar">		
 			<div class="social-icons">
 						<?php get_template_part('social', 'fa'); ?>	 
 			</div>
