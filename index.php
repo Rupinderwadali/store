@@ -16,7 +16,7 @@ get_header(); ?>
 	<div id="primary" class="content-areas <?php do_action('store_primary-width') ?>">
 		<main id="main" class="site-main <?php do_action('store_main-class') ?>" role="main">
 <select id = "city">
-	<option value="none">Select</option>
+	<option value="none">City</option>
 	<option value ="Amritsar" >Amritsar</option>
 	<option value ="TaranTarn">TaranTarn</option>
 	<option value ="Ludhiana">Ludhiana</option>
@@ -58,7 +58,8 @@ get_header(); ?>
 	$("#city").change(function(){
 		var value= this.value;
 		$("#areas").empty();
-  			$("#areas").append($('<option>Select</option>'));
+ 		$("#areas").css({"display":"inline-block"});
+  			$("#areas").append($('<option>Area</option>'));
 		if(value == "Amritsar"){
   			$("#areas").append($('<option>Chheharta</option> + <option>Mall_Road</option> + <option>Ranjit_Avenue</option>'));
 			}	 

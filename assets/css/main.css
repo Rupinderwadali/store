@@ -95,7 +95,7 @@ a:hover {
 }
 #bottom-bar .social-icons {
   text-align:center;
-  background:#4e9b35;
+  background:#5fac46;
 }
 @media screen and (max-width: 991px) {
   #bottom-bar .social-icons {
@@ -105,7 +105,7 @@ a:hover {
   }
 }
 #bottom-bar .social-icons a {
-  background: #4e9b35;
+  background: #5fac46;
   padding: 3px 7px;
   padding-top: 5px;
   color: white;
@@ -120,7 +120,7 @@ a:hover {
   text-align: center;
 }
 #bottom-bar .social-icons a:before {
-  border: dashed 1px #e6e6e6;
+ /* border: dashed 1px #e6e6e6;*/
   border-radius: 10px;
 }
 @media screen and (max-width: 600px) {
@@ -202,7 +202,7 @@ a:hover {
   }
 }
 #masthead h1.site-title a {
-  color: #4e9b35;
+  color: #5fac46;
 }
 #masthead h2.site-description {
   font-weight: 300;
@@ -263,7 +263,7 @@ a:hover {
   width: 100%;
 }
 #top-search input[type=search]::-webkit-input-placeholder {
-  color: #4e9b35;
+  color: #5fac46;
 }
 #top-search input[type=search]:-moz-placeholder {
   color: #6ab5d8;
@@ -275,9 +275,9 @@ a:hover {
   color: #6ab5d8;
 }
 #top-search button {
-  background: #4e9b35;
+  background: #5fac46;
   box-shadow: none;
-  border: solid 2px #4e9b35;
+  border: solid 2px #5fac46;
   text-shadow: none;
   padding: 10px 13px;
   border-left: none;
@@ -1949,7 +1949,7 @@ span.infinite-loader .spinner {
   margin-right: 5px;
 }
 #colophon {
-  background:#4e9b35;
+  background:#5fac46;
   padding: 15px 10px 15px 10px;
   color: #f5f5f5;
   font-size: 13px;
@@ -2174,7 +2174,7 @@ span.infinite-loader .spinner {
   font-size:200%;
 }
 #site-navigation{
-     background:#4e9b35;
+     background:#5fac46;
 }
 i.fa.fa-search::before {
 color:#fafafa;
@@ -2193,5 +2193,5 @@ color:#fff;
 }
 #bottom-bar {
   padding-top: 6px;
-  background: #4e9b35;
+  background: #5fac46;
 }
