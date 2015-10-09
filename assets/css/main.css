@@ -254,7 +254,7 @@ a:hover {
   }
 }
 #top-search input[type=search] {
-  background: #A3DF8F;
+  background: #fafafa;
   border: solid 2px #4E9B35;
   border-right: none;
   padding: 10px 10px;
@@ -262,7 +262,7 @@ a:hover {
   width: 100%;
 }
 #top-search input[type=search]::-webkit-input-placeholder {
-  color: #6ab5d8;
+  color: #4e9b35;
 }
 #top-search input[type=search]:-moz-placeholder {
   color: #6ab5d8;
@@ -274,7 +274,7 @@ a:hover {
   color: #6ab5d8;
 }
 #top-search button {
-  background: #DDFAD3;
+  background: #4e9b35;
   box-shadow: none;
   border: solid 2px #4e9b35;
   text-shadow: none;
@@ -2175,3 +2175,7 @@ span.infinite-loader .spinner {
 #site-navigation{
      background:#4e9b35;
 }
+i.fa.fa-search::before {
+color:#fafafa;
+}
+
