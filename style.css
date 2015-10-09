@@ -804,3 +804,14 @@ text-align: center;
 	background:#fafafa;
 	padding:50px;
 }
+select#areas, select#city {
+text-align: center;
+width:200px;
+height:30px;
+border-radius:5px;
+background:#fff;	
+
+}
+#areas {
+display:none;
+}
