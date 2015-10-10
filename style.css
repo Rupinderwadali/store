@@ -820,5 +820,12 @@ background:#fff;
 display:none;
 }
 body {
-/*background:#fafafa;*/
+background:#fafafa;
 }
+img.attachment-post-thumbnail.wp-post-image {
+float:left;
+}
+.post-title {
+clear:both;
+}
+
