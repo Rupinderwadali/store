@@ -1,5 +1,5 @@
 /* Globals */
-@-moz-keyframes spin {
+@a-moz-keyframes spin {
   100% {
     -moz-transform: rotate(360deg);
   }
@@ -2195,3 +2195,7 @@ color:#fff;
   padding-top: 6px;
   background: #5fac46;
 }
+#content.site-content.container {
+ background:#fafafa;
+}
+

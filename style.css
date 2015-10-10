@@ -823,9 +823,10 @@ body {
 background:#fafafa;
 }
 img.attachment-post-thumbnail.wp-post-image {
-float:left;
+	/*float:right;*/
+       
 }
-.post-title {
-clear:both;
+.room {
+  width:100px;
+  height:30px;
 }
-
