@@ -14,7 +14,14 @@ register_taxonomy('area', 'post', array(
 }
 add_action('init', 'create_my_taxonomies', 0);
 
-
+$args = array(
+	'flex-width'    => true,
+	'width'         => 1500,
+	'flex-height'    => true,
+	'height'        => 100,
+	'default-image' => get_template_directory_uri() . '',
+);
+add_theme_support( 'custom-header', $args );
 
 if ( ! function_exists( 'store_setup' ) ) :
 /**
