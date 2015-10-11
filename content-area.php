@@ -6,17 +6,14 @@ foreach($terms as $term) : ?>
 		<?php
 		$posts = new WP_Query(array('area' => $term->slug));
         
-		if( $posts->have_posts() ):?> 
-                <div class="room"></div>
-		<div class="boxi">		
- 	          <?php
+		if( $posts->have_posts() ):
 	        	while( $posts->have_posts() ) : 
 		       $posts->the_post();?>
-		</div>
+	                 <?php the_post_thumbnail();?>
+	
 	<div class="post_title">
 		<a href ="<?php the_permalink();?>"><?php the_title();?></a>
-	<?php the_post_thumbnail();?>
-	</div>
+       	      	</div>
 		<?php
 			endwhile;
 		endif;

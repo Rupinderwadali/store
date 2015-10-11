@@ -57,7 +57,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
-  background: #f7f5ee;
+  background: #fafafa;
   word-wrap: break-word;
 }
 .mega-container {
@@ -2197,5 +2197,8 @@ color:#fff;
 }
 #content.site-content.container {
  background:#fafafa;
+}
+.boxi {
+/*float:left;*/
 }
 
