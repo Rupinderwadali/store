@@ -6,8 +6,9 @@ foreach($terms as $term) : ?>
 		<?php
 		$posts = new WP_Query(array('area' => $term->slug));
         
-		if( $posts->have_posts() ):
-	        	while( $posts->have_posts() ) : 
+		if( $posts->have_posts() ):?>
+	        <div class="room"></div>
+		<?php	while( $posts->have_posts() ) : 
 		       $posts->the_post();?>
 	                 <?php the_post_thumbnail();?>
 	
