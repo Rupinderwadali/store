@@ -18,7 +18,7 @@ get_header(); ?>
 <select id = "city">
 	<option value="none">City</option>
 	<option value ="Amritsar" >Amritsar</option>
-	<option value ="TaranTarn">TaranTarn</option>
+	<option value ="TarnTaran">Tarn_Taran</option>
 	<option value ="Ludhiana">Ludhiana</option>
 </select>
 <select id = "areas">
@@ -66,6 +66,9 @@ get_header(); ?>
 		else if(value == "Ludhiana"){
 			$("#areas").append($('<option>Gill_Road</option> + <option>Dugri</option>'));
 			}	
+		else if(value == "TarnTaran"){
+			$("#areas").append($('<option>Patti</option> + <option>Chabal</option>'));
+			}	
 		});
 
 	$("#areas").change(function(){
@@ -76,13 +79,23 @@ get_header(); ?>
         		$(".Chheharta").css({"display": "block"});
 		}
 	       	else if(select == 'Ranjit_Avenue'){
-			$(" .Ranjit_Avenue").css({"display":"block"});
+			$(".Ranjit_Avenue").css({"display":"block"});
 		}
 	 	else if(select == 'Gill_Road'){
-			$(" .Gill_Road").css({"display":"block"});
+			$(".Gill_Road").css({"display":"block"});
 		}
-
-
+		else if(select == 'Mall_Road'){
+			$(".Mall_Road").css({"display":"block"});
+		}
+		else if(select == 'Dugri'){
+			$(".Dugri").css({"display":"block"});
+		}
+		else if(select == 'Patti'){
+			$(".Patti").css({"display":"block"});
+		}
+		else if(select == 'Chabal'){
+			$(".Chabal").css({"display":"block"});
+		}
 	});
 </script>  
 <?php //get_sidebar(); ?>

@@ -8,9 +8,11 @@ foreach($terms as $term) : ?>
         
 		if( $posts->have_posts() ):?> 
                 <div class="room"></div>
-			<?php
-			while( $posts->have_posts() ) : 
-				$posts->the_post();?>
+		<div class="boxi">		
+ 	          <?php
+	        	while( $posts->have_posts() ) : 
+		       $posts->the_post();?>
+		</div>
 	<div class="post_title">
 		<a href ="<?php the_permalink();?>"><?php the_title();?></a>
 	<?php the_post_thumbnail();?>
