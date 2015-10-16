@@ -830,3 +830,15 @@ img.attachment-post-thumbnail.wp-post-image {
   width:100px;
   height:30px;
 }
+.foto{
+background-image: url(images/header.jpg);
+width: 100%; /*or your image's width*/
+height: 120px; /*or your image's height*/
+margin: 0;
+padding: 0;
+}
+.masthead-container {
+/*width:100%;
+ height;200px; /* height of the background image? 
+ background:url(images/header.jpg) repeat-x 0 0;*/
+}

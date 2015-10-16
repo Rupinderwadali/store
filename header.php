@@ -31,12 +31,14 @@
 		</div>
 	</div>	
 	
-	
+	<div class="foto"> <img src="images/header.jpg" width="2000" height="120" alt="site-header"/>
+        </div>
 	<header id="masthead" class="site-header" role="banner">
-
-		<div class="container masthead-container">
+		
+		<div class="masthead-container">	
 			<div class="site-branding">
 				<?php if ( get_theme_mod('store_logo') != "" ) : ?>
+				
 				<div id="site-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_theme_mod('store_logo') ); ?>"></a>
 				</div>
@@ -63,7 +65,7 @@
 				</div><!--container-->
 			</div><!--top-bar-->
 	
-			
+		
 		</div>	
 		
 		<div id="slickmenu"></div>
