@@ -831,11 +831,11 @@ img.attachment-post-thumbnail.wp-post-image {
   height:30px;
 }
 .foto{
-background-image: url(images/header.jpg);
-width: 100%; /*or your image's width*/
-height: 120px; /*or your image's height*/
+/*background-image: url(images/header.jpg);
+width: 100%; 
+height: 120px;
 margin: 0;
-padding: 0;
+padding: 0;*/
 }
 .masthead-container {
 /*width:100%;
