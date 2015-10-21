@@ -28,6 +28,7 @@ endforeach; ?>
 
 <?php //wp_reset_postdata();
 ?>
+</div>
 <script type="text/javascript">
 $(function() {
 $("#btnclick").click(function() {
